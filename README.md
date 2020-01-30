@@ -12,3 +12,28 @@
 |  . |    .    |
 |  . |    .    |
 
+# Django
+
+## Start Project
+| Task   | Command  |
+|-----------|-----------|
+|  Creating a new project |    `django-admin startproject project_name`    |
+|  Start a server |    `python manage.py runserver`    |
+|  . |    .    |
+|  . |    .    |
+
+
+## Build Project
+
+| Task   | Command  |
+|-----------|-----------|
+|  . |    .    |
+|  . |    .    |
+
+## Manage Database
+
+| Task   | Command  |
+|-----------|-----------|
+|  Migrate the database |    `python manage.py migrate`    |
+|  . |    .    |
+|  . |    .    |
