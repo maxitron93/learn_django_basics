@@ -44,3 +44,16 @@
 |  Create superuser |    `python manage.py createsuperuser`    |
 |  . |    .    |
 |  . |    .    |
+
+## Using psql (Postgres)
+| Task   | Command  |
+|-----------|-----------|
+|  Start the service |    `sudo service postgresql start`    |
+|  Connect to postgres |    `sudo -u postgres psql`    |
+|  Quit psql |    `\q`    |
+|  Check user accounts |    `\du`    |
+|  Create database |    `CREATE DATABASE name;`    |
+|  Check port number |    `\conninfo`    |
+|  Change user password |    `\password USERNAME`    |
+|  . |    .    |
+|  . |    .    |

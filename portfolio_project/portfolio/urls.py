@@ -19,5 +19,5 @@ from django.conf import settings # Import settings.py
 from django.conf.urls.static import static # Static is an app in itself
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls)
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # To serve media files
