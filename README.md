@@ -27,7 +27,7 @@
 
 | Task   | Command  |
 |-----------|-----------|
-|  . |    .    |
+|  Create a new app |    `python manage.py startapp appName`    |
 |  . |    .    |
 
 ## Manage Database
@@ -37,3 +37,4 @@
 |  Migrate the database |    `python manage.py migrate`    |
 |  . |    .    |
 |  . |    .    |
+
