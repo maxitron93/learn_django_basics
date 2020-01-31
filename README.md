@@ -22,12 +22,12 @@
 |  . |    .    |
 
 
-## Build Project
+## Manage Project
 
 | Task   | Command  |
 |-----------|-----------|
 |  Create a new app |    `python manage.py startapp appName`    |
-|  . |    .    |
+|  Consolidate static files |    `python manage.py collectstatic`    |
 
 ## Manage Database
 
