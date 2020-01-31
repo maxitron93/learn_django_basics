@@ -37,6 +37,13 @@
 |  Make migrations |    `python manage.py makemigrations`    |
 |  . |    .    |
 
+#### Creating a model
+1. Create the model (class) in models.py
+2. Add the app to the settings
+3. Create a migration
+4. Migrate
+5. Add the model to the admin
+
 ## Manage Users
 
 | Task   | Command  |
@@ -54,6 +61,6 @@
 |  Check user accounts |    `\du`    |
 |  Create database |    `CREATE DATABASE name;`    |
 |  Check port number |    `\conninfo`    |
-|  Change user password |    `\password USERNAME`    |
-|  . |    .    |
+|  Change user password |    `\password username`    |
+|  Delete Database |    `DROP DATABASE db_name`    |
 |  . |    .    |

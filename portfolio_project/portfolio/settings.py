@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'jobs.apps.JobsConfig' # Adding a new app. This is referencing jobs/apps -> JobsConfig class
+    'jobs.apps.JobsConfig', # Adding a new app. This is referencing jobs/apps -> JobsConfig class
     # 'django.contrib.blog' # Adding a new app
+    'blog.apps.BlogConfig'
 ]
 
 MIDDLEWARE = [
