@@ -1,0 +1,9 @@
+<h1>All Blogs</h1>
+
+{% for blog in blogs.all %}
+<a href="/blog/{{blog.pk}}">{{ blog.title }}</a>
+<br>
+<p>{{ blog.formattedTime }}</p>
+<img src="{{ blog.image.url }}" alt="Blog image", width="200">
+<p>{{ blog.summary }}...</p>
+{% endfor %}

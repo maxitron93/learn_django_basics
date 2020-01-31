@@ -1,0 +1,9 @@
+<h1>Home</h1>
+
+<h3>Jobs</h3>
+
+{% for job in jobs.all %}
+<h4>Job</h4>
+<p>{{ job.summary }}</p>
+<img src="{{ job.image.url }}" alt="{{ job.summary }}" height="200"/>
+{% endfor %}

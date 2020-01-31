@@ -13,3 +13,16 @@ class Blog(models.Model):
     pub_date = models.DateTimeField()
     image = models.ImageField(upload_to='images/')
 
+    # This function returns the title as the main description or the admin site :D
+    def __str__(self):
+        return self.title
+
+    # Create a function to return only the first 100 characters of the body
+    def summary(self):
+        return self.body[:15]
+
+    # Function to return a nicely formatted time
+    def formattedTime(self):
+        return self.pub_date.strftime('%b %e %Y')
+
+    
