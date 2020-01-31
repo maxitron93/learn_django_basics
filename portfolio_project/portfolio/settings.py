@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jobs.apps.JobsConfig' # Adding a new app. This is referencing jobs/apps -> JobsConfig class
+    # 'django.contrib.blog' # Adding a new app
 ]
 
 MIDDLEWARE = [
@@ -118,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # This is where uploaded images will be saved
+
+MEDIA_URL = '/media/' # This is where media can be access from 

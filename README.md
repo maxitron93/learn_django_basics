@@ -10,7 +10,6 @@
 |  Install packages from requirements.txt |    `pip install -r requirements.txt`    |
 |  . |    .    |
 |  . |    .    |
-|  . |    .    |
 
 # Django
 
@@ -35,6 +34,13 @@
 | Task   | Command  |
 |-----------|-----------|
 |  Migrate the database |    `python manage.py migrate`    |
-|  . |    .    |
+|  Make migrations |    `python manage.py makemigrations`    |
 |  . |    .    |
 
+## Manage Users
+
+| Task   | Command  |
+|-----------|-----------|
+|  Create superuser |    `python manage.py createsuperuser`    |
+|  . |    .    |
+|  . |    .    |
