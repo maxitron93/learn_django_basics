@@ -1,0 +1,14 @@
+<h1>Count of words in your text</h1>
+
+<a href='{%  url "home" %}'>Home</a>
+
+<h3>Here is your text:</h3>
+<p>{{ text }}</p>
+
+<p>There are {{ wordCount }} word in your text!</p>
+
+<h3>Here is the breakdown:</h3>
+{% for word, count in textDict.items %}
+<p><strong>{{ word }}</strong>: {{ count }}</p>
+{% endfor %}
+

@@ -1,0 +1,12 @@
+<h1>Word Count</h1>
+
+<a href="{% url 'about' %}">About</a>
+
+<h3>{{ subTitle }}</h3>
+
+<form action="{% url 'countPage' %}">
+    <textarea name="text" id="text" cols="40" rows="5">Enter text here</textarea>
+    <br>
+    <br>
+    <input type="submit" value="Count the words!">
+</form>

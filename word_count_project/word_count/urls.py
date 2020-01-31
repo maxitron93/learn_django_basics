@@ -19,7 +19,9 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.homePage),
+    path('', views.homePage, name='home'),
     path('eggs/', views.getEggs),
-    path('overview/', views.overview)
+    path('overview/', views.overview),
+    path('countWords/', views.countWords, name='countPage'), # Can add name to url
+    path('about/', views.about, name='about')
 ]
