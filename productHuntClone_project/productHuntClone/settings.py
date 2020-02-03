@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'products.apps.ProductsConfig', # Need to do this everytime we add a new app
+    'accounts.apps.AccountsConfig',  # Need to do this everytime we add a new app
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +56,7 @@ ROOT_URLCONF = 'productHuntClone.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['productHuntClone/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

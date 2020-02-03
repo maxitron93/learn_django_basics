@@ -1,0 +1,21 @@
+<header>
+    <p>Header</p>
+    <ul>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'signup' %}">Sign Up</a></li>
+        <li><a href="{% url 'login' %}">Log In</a></li>
+        <li><a href="{% url 'logout' %}">Log Out</a></li>
+    </ul>
+    <p>End Header</p>
+</header>
+
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<footer>
+    <p>Footer</p>
+    <p>End Footer</p>
+</footer>
