@@ -29,4 +29,3 @@ def login(request):
 
 def logout(request):
     return render(request, 'products/home.html')
-
