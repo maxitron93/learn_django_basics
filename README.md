@@ -57,10 +57,12 @@
 |-----------|-----------|
 |  Start the service |    `sudo service postgresql start`    |
 |  Connect to postgres |    `sudo -u postgres psql`    |
-|  Quit psql |    `\q`    |
 |  Check user accounts |    `\du`    |
 |  Create database |    `CREATE DATABASE name;`    |
 |  Check port number |    `\conninfo`    |
 |  Change user password |    `\password username`    |
 |  Delete Database |    `DROP DATABASE db_name`    |
+|  Quit psql |    `\q`    |
+|  Show databases |    `\l`    |
+|  . |    .    |
 |  . |    .    |
