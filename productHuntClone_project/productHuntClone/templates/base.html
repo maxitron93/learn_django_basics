@@ -10,6 +10,12 @@
 </header>
 
 <div>
+    {% if message %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+</div>
+
+<div>
     {% block content %}
     {% endblock %}
 </div>
