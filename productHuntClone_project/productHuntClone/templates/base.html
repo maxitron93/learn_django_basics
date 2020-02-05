@@ -2,9 +2,18 @@
     <p>Header</p>
     <ul>
         <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="{% url 'signup' %}">Sign Up</a></li>
-        <li><a href="{% url 'login' %}">Log In</a></li>
-        <li><a href="{% url 'logout' %}">Log Out</a></li>
+        {% if user.is_authenticated %}
+            <!-- When someone clicks 'Log Out', submit the form -->
+            <li><a href="javascript:{document.getElementById('logout').submit()}">Log Out</a></li>
+            <!-- Hidden form to submit a POST request to the logout url -->
+            <form id='logout' action="{% url 'logout' %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden">
+            </form>
+        {% else %}
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            <li><a href="{% url 'login' %}">Log In</a></li>
+        {% endif %}
     </ul>
     <p>End Header</p>
 </header>
