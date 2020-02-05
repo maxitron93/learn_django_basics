@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Product Detail</h1>
+<img src="{{ product.icon.url }}" alt="Product Image" width="50" />
+
+<h4>Title</h4>
+<p>{{ product.title }}</p>
+
+<h4>Body</h4>
+<p>{{ product.body }}</p>
+
+<h4>URL</h4>
+<p>{{ product.url }}</p>
+
+<img src="{{ product.image.url }}" alt="Product Icon" width="200" />
+
+<h4>Votes</h4>
+<p>{{ product.votes_total }}</p>
+
+<p><a href="javascript:{document.getElementById('upvote').submit()}">Upvote!</a></p>
+<form id='upvote' action="{% url 'upvote' %}" method="POST">
+    {% csrf_token %}
+    <input type="hidden", name="product_id" value="{{ product.id }}">
+</form>
+
+<h3>Hunted by {{ product.hunter.username }}!</h3>
+<h4>Posted {{ product.pub_date_pretty }}</h4>
+
+{% endblock %}
